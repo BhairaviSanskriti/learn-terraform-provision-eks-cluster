@@ -29,3 +29,11 @@ terraform {
   required_version = "~> 1.3"
 }
 
+terraform {
+  backend "remote"{
+    organization = "nellster4"
+    
+    workspaces{
+      name = "learn-terraform-provision-eks-cluster"
+    }
+}
