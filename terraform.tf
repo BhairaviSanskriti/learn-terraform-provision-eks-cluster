@@ -36,4 +36,5 @@ terraform {
     workspaces{
       name = "learn-terraform-provision-eks-cluster"
     }
+  }
 }
