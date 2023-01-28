@@ -29,13 +29,3 @@ terraform {
   required_version = "~> 1.3"
 }
 
-terraform {
-  cloud {
-    organization = "example-org-8ebe79"
-
-    workspaces {
-      name = "yes"
-    }
-  }
-}
-
