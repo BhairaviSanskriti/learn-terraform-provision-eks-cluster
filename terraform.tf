@@ -32,10 +32,9 @@ terraform {
 terraform {
   cloud {
     organization = "example-org-8ebe79"
-    hostname = "app.terraform.io" # Optional; defaults to app.terraform.io
 
     workspaces {
-      tags = ["infra", "aws"]
+      name = "yes"
     }
   }
 }
