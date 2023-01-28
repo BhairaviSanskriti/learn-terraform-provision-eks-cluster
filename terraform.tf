@@ -31,11 +31,11 @@ terraform {
 
 terraform {
   cloud {
-    organization = "my-org"
+    organization = "example-org-8ebe79"
     hostname = "app.terraform.io" # Optional; defaults to app.terraform.io
 
     workspaces {
-      tags = ["networking", "source:cli"]
+      tags = ["infra", "aws"]
     }
   }
 }
