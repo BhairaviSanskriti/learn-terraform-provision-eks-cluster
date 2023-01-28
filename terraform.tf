@@ -30,11 +30,13 @@ terraform {
 }
 
 terraform {
-  backend "remote"{
-    organization = "nellster4"
-    
-    workspaces{
-      name = "learn-terraform-provision-eks-cluster"
+  cloud {
+    organization = "my-org"
+    hostname = "app.terraform.io" # Optional; defaults to app.terraform.io
+
+    workspaces {
+      tags = ["networking", "source:cli"]
     }
   }
 }
+
